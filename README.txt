@@ -1,1 +1,1 @@
-The present Web App provides a simple booking system solution. One can place a booking of an devise or laboratory equipment choosing day and time interval. The booking is open for one week forward from the present day.
+The present Web App provides a simple booking system solution. One can place a booking of a devise or laboratory equipment choosing day and time interval. The booking is open for one week forward from the present day.
