@@ -43,6 +43,5 @@ def index():
     days = []
     for i in range(0,7):
         days.append((datetime.now() + timedelta(days=1)*i).strftime('%Y-%m-%d'))
-    print(days)
 
     return render_template('index.html', form=form, database=database, days=days)
