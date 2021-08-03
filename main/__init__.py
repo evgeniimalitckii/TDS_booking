@@ -5,7 +5,7 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'mykey'
+app.config['SECRET_KEY'] = 'mykey_dvlmadlkcmdcal;c,'
 app.config['SECURITY_PASSWORD_SALT'] = 'my_password_salt'
 
 ###############################
@@ -13,7 +13,10 @@ app.config['SECURITY_PASSWORD_SALT'] = 'my_password_salt'
 ##############################
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+# for localhost
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+# for heroku "tds-booking" project
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://wncgjwthdianhx:e49e7b3fd624473e22d1975d119e83efc9a525b8bbf9769a9401e65bac82c4b1@ec2-3-248-103-75.eu-west-1.compute.amazonaws.com:5432/d79j30n54ibobs'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
