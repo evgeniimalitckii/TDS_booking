@@ -1,8 +1,8 @@
-"""fds
+"""heroku
 
-Revision ID: 6cf44276ddca
+Revision ID: ac4d9c938c5b
 Revises: 
-Create Date: 2021-07-22 20:25:07.589496
+Create Date: 2021-08-04 10:20:00.144683
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '6cf44276ddca'
+revision = 'ac4d9c938c5b'
 down_revision = None
 branch_labels = None
 depends_on = None
