@@ -6,7 +6,7 @@ from flask_migrate import Migrate
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'mykey_dvlmadlkcmdcal;c,'
-app.config['SECURITY_PASSWORD_SALT'] = 'my_password_salt'
+app.config['SECURITY_PASSWORD_SALT'] = 'my_password_salt_ksnfjsdn'
 
 ###############################
 ####### DATABASE SETUP ########
